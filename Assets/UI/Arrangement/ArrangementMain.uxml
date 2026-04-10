@@ -89,6 +89,17 @@
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
+    <!-- 删除大关卡确认 -->
+    <ui:VisualElement name="chapter-delete-confirm-overlay" class="modal-overlay hidden" picking-mode="Position">
+        <ui:VisualElement class="modal-dialog" picking-mode="Position">
+            <ui:Label text="确认删除大关卡" class="modal-title"/>
+            <ui:Label name="chapter-delete-confirm-message" class="modal-label" style="margin-bottom: 16px; white-space: normal;" text=""/>
+            <ui:VisualElement class="modal-buttons">
+                <ui:Button name="chapter-delete-confirm-btn" text="删除" class="toolbar-btn"/>
+                <ui:Button name="chapter-delete-cancel-btn" text="取消" class="toolbar-btn"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
     <!-- 返回确认（与 LevelEditor 退出确认同一交互） -->
     <ui:VisualElement name="exit-confirm-overlay" class="modal-overlay hidden" picking-mode="Position">
         <ui:VisualElement class="modal-dialog" picking-mode="Position">

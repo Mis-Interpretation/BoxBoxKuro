@@ -34,6 +34,9 @@ public class ArrangementController : MonoBehaviour
     private Label _newLevelErrorLabel;
 
     private VisualElement _exitConfirmOverlay;
+    private VisualElement _chapterDeleteConfirmOverlay;
+    private Label _chapterDeleteConfirmMessage;
+    private int _pendingChapterDeleteIndex = -1;
 
     // 使用 OnEnable 确保 UIDocument.rootVisualElement 已就绪
     private void OnEnable()
@@ -88,7 +91,7 @@ public class ArrangementController : MonoBehaviour
         }
         _chapterListView = new ChapterListView(chapterList, _chapterItemTemplate);
         _chapterListView.OnChapterSelected += OnChapterSelected;
-        _chapterListView.OnChapterDeleteRequested += OnChapterDelete;
+        _chapterListView.OnChapterDeleteRequested += OnChapterDeleteRequested;
         _chapterListView.OnChapterRenamed += OnChapterRenamed;
         _chapterListView.OnChapterReordered += OnChapterReordered;
 
@@ -148,6 +151,13 @@ public class ArrangementController : MonoBehaviour
         exitSaveBtn?.RegisterCallback<ClickEvent>(_ => OnExitSave());
         exitDiscardBtn?.RegisterCallback<ClickEvent>(_ => OnExitDiscard());
         exitCancelBtn?.RegisterCallback<ClickEvent>(_ => HideExitConfirm());
+
+        _chapterDeleteConfirmOverlay = _root.Q("chapter-delete-confirm-overlay");
+        _chapterDeleteConfirmMessage = _root.Q<Label>("chapter-delete-confirm-message");
+        var chapterDeleteConfirmBtn = _root.Q<Button>("chapter-delete-confirm-btn");
+        var chapterDeleteCancelBtn = _root.Q<Button>("chapter-delete-cancel-btn");
+        chapterDeleteConfirmBtn?.RegisterCallback<ClickEvent>(_ => OnChapterDeleteConfirmed());
+        chapterDeleteCancelBtn?.RegisterCallback<ClickEvent>(_ => HideChapterDeleteConfirm());
 
         var unassignedNewBtn = _root.Q<Button>("unassigned-new-btn");
         if (unassignedNewBtn != null)
@@ -313,13 +323,37 @@ public class ArrangementController : MonoBehaviour
         RefreshAll();
     }
 
-    private void OnChapterDelete(int index)
+    private void OnChapterDeleteRequested(int index)
+    {
+        if (index < 0 || index >= _state.Campaign.Chapters.Count) return;
+
+        _pendingChapterDeleteIndex = index;
+        string name = _state.Campaign.Chapters[index].ChapterName ?? "";
+        if (_chapterDeleteConfirmMessage != null)
+            _chapterDeleteConfirmMessage.text = $"确定要删除大关卡「{name}」吗？关卡文件不会被删除，仅从本战役中移除该章节。";
+
+        _chapterDeleteConfirmOverlay?.RemoveFromClassList("hidden");
+    }
+
+    private void HideChapterDeleteConfirm()
+    {
+        _pendingChapterDeleteIndex = -1;
+        _chapterDeleteConfirmOverlay?.AddToClassList("hidden");
+    }
+
+    private void OnChapterDeleteConfirmed()
+    {
+        int index = _pendingChapterDeleteIndex;
+        HideChapterDeleteConfirm();
+        PerformChapterDelete(index);
+    }
+
+    private void PerformChapterDelete(int index)
     {
         if (index < 0 || index >= _state.Campaign.Chapters.Count) return;
 
         _state.Campaign.Chapters.RemoveAt(index);
 
-        // 调整选中索引
         if (_state.SelectedChapterIndex >= _state.Campaign.Chapters.Count)
             _state.SelectedChapterIndex = _state.Campaign.Chapters.Count - 1;
 
