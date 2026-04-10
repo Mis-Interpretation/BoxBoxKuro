@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 /// <summary>
-/// 主菜单控制器：绑定 Play 和 Edit Levels 按钮。
+/// 主菜单控制器：绑定 Play、Edit Levels、实体配置与退出按钮。
 /// 挂载在 MainScene 中包含按钮的 Canvas 或父对象上。
 /// </summary>
 public class MainMenuController : MonoBehaviour
@@ -11,6 +11,7 @@ public class MainMenuController : MonoBehaviour
     [SerializeField] private Button _playButton;
     [SerializeField] private Button _editLevelsButton;
     [SerializeField] private Button _entityConfigButton;
+    [SerializeField] private Button _quitButton;
 
     private void Start()
     {
@@ -30,6 +31,11 @@ public class MainMenuController : MonoBehaviour
             var go = GameObject.Find("Button_EntityConfig");
             if (go != null) _entityConfigButton = go.GetComponent<Button>();
         }
+        if (_quitButton == null)
+        {
+            var go = GameObject.Find("Button_Quit");
+            if (go != null) _quitButton = go.GetComponent<Button>();
+        }
 
         if (_playButton != null)
             _playButton.onClick.AddListener(OnPlay);
@@ -37,6 +43,8 @@ public class MainMenuController : MonoBehaviour
             _editLevelsButton.onClick.AddListener(OnEditLevels);
         if (_entityConfigButton != null)
             _entityConfigButton.onClick.AddListener(OnEntityConfig);
+        if (_quitButton != null)
+            _quitButton.onClick.AddListener(OnQuit);
     }
 
     private void OnPlay()
@@ -52,5 +60,14 @@ public class MainMenuController : MonoBehaviour
     private void OnEntityConfig()
     {
         SceneManager.LoadScene(SceneNameModel.EntityConfigScene);
+    }
+
+    private static void OnQuit()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
     }
 }
