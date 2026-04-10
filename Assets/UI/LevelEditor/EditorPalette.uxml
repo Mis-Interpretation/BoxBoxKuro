@@ -1,0 +1,31 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/LevelEditor/EditorPalette.uss?fileID=7433441132597879392&amp;guid=845d6c9eebe595e4dafbfc488dc0d1b7&amp;type=3#EditorPalette"/>
+    <ui:VisualElement name="palette-root" class="palette-root" style="width: 180px;">
+        <ui:VisualElement name="mode-section" class="mode-section">
+            <ui:VisualElement name="brush-mode-item" class="mode-item">
+                <ui:Button name="brush-mode-btn" class="tool-selected" style="width: 80px; height: 80px;"/>
+                <ui:Label text="笔刷" class="mode-label"/>
+                <ui:VisualElement name="brush-flyout" class="tool-flyout hidden"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="select-mode-item" class="mode-item">
+                <ui:Button name="select-mode-btn" class="tool-selected" style="width: 80px; height: 80px;"/>
+                <ui:Label text="选择" class="mode-label"/>
+                <ui:VisualElement name="select-flyout" class="tool-flyout hidden"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="separator"/>
+        <ui:ScrollView name="entity-scroll" class="entity-scroll" mode="Vertical">
+            <ui:VisualElement name="entity-section" class="entity-section"/>
+        </ui:ScrollView>
+        <ui:VisualElement class="separator"/>
+        <ui:Button name="center-btn" class="action-btn" text="居中"/>
+        <ui:VisualElement name="text-inspector" class="text-inspector hidden">
+            <ui:Label text="Text 属性" class="text-inspector__title"/>
+            <ui:Label text="内容" class="text-inspector__field-label"/>
+            <ui:TextField name="text-content-field" class="text-inspector__field"/>
+            <ui:Label text="字号" class="text-inspector__field-label"/>
+            <ui:IntegerField name="text-font-field" class="text-inspector__field"/>
+            <ui:Button name="text-apply-btn" class="action-btn" text="应用"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Game/LevelTitleHud.uss"/>
+    <ui:VisualElement name="level-title-hud-root">
+        <ui:Label name="level-title-label" text="" class="level-title-label"/>
+    </ui:VisualElement>
+</ui:UXML>

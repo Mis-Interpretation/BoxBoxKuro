@@ -1,0 +1,267 @@
+/* ===== 根容器：左侧竖排工具栏 ===== */
+.palette-root {
+    position: absolute;
+    left: 0;
+    top: 48px;
+    bottom: 0;
+    width: 180px;
+    background-color: #2a2a2a;
+    border-right-width: 1px;
+    border-right-color: #444;
+    padding: 4px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ===== 分隔线 ===== */
+.separator {
+    width: 36px;
+    height: 1px;
+    background-color: #555;
+    margin: 4px 0;
+    flex-shrink: 0;
+}
+
+/* ===== 模式选择区 ===== */
+.mode-section {
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 100%;
+}
+
+.mode-item {
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 100%;
+    margin: 4px 0;
+}
+
+.mode-item--active > .tool-selected {
+    background-color: #3a4a6a;
+    border-color: #77aadd;
+}
+
+.mode-label {
+    font-size: 9px;
+    color: #888;
+    -unity-text-align: middle-center;
+    margin-top: 1px;
+}
+
+.mode-item--active > .mode-label {
+    color: #bbd;
+}
+
+/* ===== 绘制模式工具区 ===== */
+.tool-section {
+    position: relative;
+}
+
+.tool-selected {
+    width: 44px;
+    height: 44px;
+    background-color: #3a3a3a;
+    border-width: 1px;
+    border-color: #555;
+    border-radius: 4px;
+    color: #ddd;
+    font-size: 11px;
+    padding: 2px;
+    -unity-text-align: middle-center;
+    white-space: normal;
+}
+
+.tool-selected:hover {
+    background-color: #4a4a4a;
+    border-color: #77aadd;
+}
+
+
+/* 右下角小三角（表示有子工具） */
+.tool-triangle {
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    width: 6px;
+    height: 6px;
+    background-color: #999;
+    /* 用 rotate 45deg 模拟三角 */
+    rotate: 45deg;
+    scale: 1 0.6;
+}
+
+/* ===== Flyout 弹出面板 ===== */
+.tool-flyout {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    flex-direction: column;
+    flex-shrink: 0;
+    background-color: #333;
+    border-width: 1px;
+    border-color: #555;
+    border-radius: 4px;
+    padding: 2px;
+    min-width: 80px;
+    z-index: 100;
+}
+
+.tool-option {
+    height: 36px;
+    flex-shrink: 0;
+    background-color: transparent;
+    border-width: 0;
+    border-radius: 3px;
+    color: #ccc;
+    font-size: 12px;
+    padding: 0 10px;
+    -unity-text-align: middle-left;
+    margin: 1px 0;
+}
+
+.tool-option:hover {
+    background-color: #4a4a5a;
+}
+
+.tool-option--active {
+    background-color: #3a4a6a;
+    color: #fff;
+}
+
+/* ===== 实体类型区 ===== */
+.entity-section {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* 滚轮速度：UI Toolkit 的 ScrollView 无滚轮倍率 USS，实际缩放见 EditorPaletteView（entity-scroll 的 WheelEvent）。 */
+.entity-scroll {
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.entity-scroll > .unity-scroll-view__vertical-scroller,
+.entity-scroll > .unity-scroll-view__horizontal-scroller {
+    display: none;
+}
+
+.entity-group {
+    width: 100px;
+    flex-direction: column;
+    align-items: center;
+    border-top-width: 1px;
+    border-top-color: #4b4b4b;
+    margin-top: 4px;
+    padding-top: 4px;
+}
+
+.entity-group__title {
+    font-size: 9px;
+    color: #9ca9c2;
+    -unity-text-align: middle-center;
+    margin-bottom: 2px;
+}
+
+.entity-btn {
+    width: 92px;
+    height: 80px;
+    background-color: #3a3a3a;
+    border-width: 1px;
+    border-color: #555;
+    border-radius: 4px;
+    margin: 2px 0;
+    padding: 2px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.entity-btn:hover {
+    background-color: #4a4a4a;
+}
+
+.entity-btn--selected {
+    background-color: #3a4a6a;
+    border-color: #77aadd;
+}
+
+.entity-btn__icon {
+    width: 48px;
+    height: 48px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.entity-btn__label {
+    font-size: 9px;
+    color: #aaa;
+    -unity-text-align: middle-center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 72px;
+}
+
+.entity-btn--selected > .entity-btn__label {
+    color: #dde;
+}
+
+/* ===== 操作按钮 ===== */
+.action-btn {
+    flex-shrink: 0;
+    width: 80px;
+    height: 32px;
+    background-color: #3a3a3a;
+    border-width: 1px;
+    border-color: #555;
+    border-radius: 4px;
+    color: #ccc;
+    font-size: 12px;
+    -unity-text-align: middle-center;
+    margin: 2px 0;
+}
+
+.action-btn:hover {
+    background-color: #4a4a5a;
+    border-color: #77aadd;
+}
+
+.text-inspector {
+    width: 100%;
+    margin-top: 4px;
+    padding: 4px;
+    border-top-width: 1px;
+    border-top-color: #4b4b4b;
+}
+
+.text-inspector__title {
+    font-size: 10px;
+    color: #dde;
+    -unity-text-align: middle-center;
+    margin-bottom: 4px;
+}
+
+.text-inspector__field-label {
+    font-size: 10px;
+    color: #aeb7c9;
+    margin-top: 4px;
+    margin-bottom: 2px;
+}
+
+.text-inspector__field {
+    width: 100%;
+}
+
+.text-inspector__field .unity-base-field__input {
+    background-color: #2f2f2f;
+    color: #e8e8e8;
+}

@@ -1,0 +1,43 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/LevelEditor/EditorHUD.uss?fileID=7433441132597879392&amp;guid=1eb835a64cd8aca4ca512141d4f7cf42&amp;type=3#EditorHUD"/>
+    <ui:VisualElement name="hud-container" class="hud-container">
+        <ui:VisualElement name="hud-root" class="hud-root">
+            <ui:Label name="level-name-display" text="（未命名）" class="level-name" style="width: 10%;"/>
+            <ui:VisualElement class="grid-size-group">
+                <ui:Label text="W" class="grid-label"/>
+                <ui:IntegerField name="grid-width" value="10" class="grid-input" style="height: 32px;"/>
+                <ui:Label text="H" class="grid-label"/>
+                <ui:IntegerField name="grid-height" value="10" class="grid-input" style="height: 32px;"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="separator"/>
+            <ui:Button name="save-btn" text="保存" class="hud-btn"/>
+            <ui:Button name="clear-btn" text="清空" class="hud-btn"/>
+            <ui:Button name="validate-btn" text="验证" class="hud-btn"/>
+            <ui:Button name="solve-btn" text="求解" class="hud-btn"/>
+            <ui:Button name="metadata-btn" text="元数据" class="hud-btn"/>
+            <ui:VisualElement class="spacer"/>
+            <ui:Button name="exit-btn" text="退出" class="hud-btn hud-btn--exit"/>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="solver-progress-root" class="solver-progress-row hidden">
+            <ui:Label name="solver-status" text="待机" class="solver-progress-text solver-status"/>
+            <ui:Label name="solver-time" text="耗时: 0.0s" class="solver-progress-text"/>
+            <ui:Label name="solver-nodes" text="节点: 0" class="solver-progress-text"/>
+            <ui:Label name="solver-speed" text="速度: 0/s" class="solver-progress-text"/>
+            <ui:Button name="solver-cancel-btn" text="取消" class="hud-btn hud-btn--danger solver-cancel-btn"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="validate-tips-root" class="validate-tips-row hidden">
+            <ui:Label name="validate-tips-label" text="按ESC退出验证    按Z撤回一步    按R重来" class="validate-tips-text"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="exit-confirm-overlay" class="exit-confirm-overlay hidden">
+        <ui:VisualElement class="exit-confirm-dialog">
+            <ui:Label text="是否保存当前关卡？" class="exit-confirm-title"/>
+            <ui:VisualElement class="exit-confirm-buttons">
+                <ui:Button name="exit-save-btn" text="保存并退出" class="hud-btn hud-btn--primary"/>
+                <ui:Button name="exit-discard-btn" text="直接退出" class="hud-btn hud-btn--danger"/>
+                <ui:Button name="exit-cancel-btn" text="取消" class="hud-btn"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

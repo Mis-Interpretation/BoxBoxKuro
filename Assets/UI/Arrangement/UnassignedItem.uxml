@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:VisualElement class="unassigned-item">
+        <ui:Label name="unassigned-name" class="unassigned-item__name" text="Level Name" />
+        <ui:Label name="unassigned-meta" class="unassigned-item__meta" text="" />
+        <ui:Button name="unassigned-add-btn" class="unassigned-item__add-btn" text="+ 添加" />
+    </ui:VisualElement>
+</ui:UXML>

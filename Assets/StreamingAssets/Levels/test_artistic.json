@@ -1,0 +1,1040 @@
+{
+    "LevelName": "test_artistic",
+    "Width": 20,
+    "Height": 12,
+    "Entities": [
+        {
+            "Type": 1,
+            "X": -9,
+            "Y": -5,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -9,
+            "Y": -4,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -9,
+            "Y": -3,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -9,
+            "Y": -2,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -9,
+            "Y": -1,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -9,
+            "Y": 0,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -9,
+            "Y": 1,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -9,
+            "Y": 2,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -9,
+            "Y": 3,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -9,
+            "Y": 4,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -8,
+            "Y": -5,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -8,
+            "Y": -4,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -8,
+            "Y": -3,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": -8,
+            "Y": -2,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": -8,
+            "Y": -1,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 2,
+            "X": -8,
+            "Y": 1,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 3,
+            "X": -8,
+            "Y": 3,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -8,
+            "Y": 4,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -7,
+            "Y": -5,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -7,
+            "Y": -4,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -7,
+            "Y": -3,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -7,
+            "Y": -2,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -7,
+            "Y": -1,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -7,
+            "Y": 1,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -7,
+            "Y": 2,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -7,
+            "Y": 3,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -7,
+            "Y": 4,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": -6,
+            "Y": -2,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -6,
+            "Y": -1,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -6,
+            "Y": 1,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": -5,
+            "Y": -3,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": -5,
+            "Y": -2,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -5,
+            "Y": -1,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -5,
+            "Y": 2,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": -4,
+            "Y": -5,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": -4,
+            "Y": -4,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": -4,
+            "Y": -3,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": -4,
+            "Y": -2,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -4,
+            "Y": -1,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -4,
+            "Y": 0,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": -4,
+            "Y": 2,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -4,
+            "Y": 3,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": -3,
+            "Y": -5,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": -3,
+            "Y": -4,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": -3,
+            "Y": -3,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": -3,
+            "Y": -2,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": -3,
+            "Y": -1,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -3,
+            "Y": 0,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -3,
+            "Y": 1,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -3,
+            "Y": 4,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": -2,
+            "Y": -5,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": -2,
+            "Y": -4,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": -2,
+            "Y": -3,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": -2,
+            "Y": -2,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -2,
+            "Y": 1,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -2,
+            "Y": 2,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 0,
+            "X": -2,
+            "Y": 3,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -2,
+            "Y": 4,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": -1,
+            "Y": -5,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": -1,
+            "Y": -4,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": -1,
+            "Y": -3,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -1,
+            "Y": 2,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -1,
+            "Y": 3,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": -1,
+            "Y": 4,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": 7,
+            "Y": -4,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": 7,
+            "Y": -1,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": 8,
+            "Y": -4,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": 8,
+            "Y": -3,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": 8,
+            "Y": -2,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": 8,
+            "Y": -1,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": 6,
+            "Y": -1,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": 6,
+            "Y": -2,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": 6,
+            "Y": -3,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": 6,
+            "Y": -4,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": 1,
+            "Y": 4,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": 1,
+            "Y": 3,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": 1,
+            "Y": 2,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": 2,
+            "Y": 2,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": 3,
+            "Y": 2,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": 3,
+            "Y": 3,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 5,
+            "X": 3,
+            "Y": 4,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": 1,
+            "Y": 0,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": 1,
+            "Y": -1,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": 1,
+            "Y": -2,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": 1,
+            "Y": -3,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": 1,
+            "Y": -4,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": 2,
+            "Y": -2,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": 3,
+            "Y": -2,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": 2,
+            "Y": 0,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": 3,
+            "Y": 0,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": 3,
+            "Y": -1,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": 2,
+            "Y": -3,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        },
+        {
+            "Type": 1,
+            "X": 3,
+            "Y": -4,
+            "Text": {
+                "Content": "Text",
+                "FontSize": 1,
+                "WidthInCells": 1,
+                "HeightInCells": 1
+            }
+        }
+    ],
+    "Metadata": {
+        "Tags": [
+            "艺术的"
+        ],
+        "DifficultyRating": 0.5,
+        "IsSolvable": true,
+        "Comment": "画了一个库洛的logo，表示尊敬。Press F to pay respect",
+        "DisplayName": "艺术性关卡",
+        "BgmPath": "Sound/BGM/On the island"
+    }
+}

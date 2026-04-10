@@ -1,0 +1,17 @@
+#level-title-hud-root {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding-top: 16px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.level-title-label {
+    width: 100%;
+    color: #ffffff;
+    font-size: 22px;
+    -unity-text-align: middle-center;
+    white-space: normal;
+}

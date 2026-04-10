@@ -1,0 +1,309 @@
+/* ===== 全局 ===== */
+.metadata-root {
+    position: absolute;
+    right: 0;
+    top: 48px;
+    bottom: 0;
+    width: 360px;
+    background-color: #2a2a2a;
+    border-left-width: 1px;
+    border-left-color: #444;
+    padding: 12px;
+    color: #ddd;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ===== 区块 ===== */
+.section {
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom-width: 1px;
+    border-bottom-color: #3a3a3a;
+}
+
+.section-label {
+    font-size: 11px;
+    color: #777;
+    -unity-font-style: bold;
+    margin-bottom: 6px;
+}
+
+.row {
+    flex-direction: row;
+    align-items: center;
+}
+
+/* 与固定高度按钮同一行时，center 会把 TextField 压扁导致单行文字上下被裁切 */
+.metadata-root .section .row {
+    align-items: flex-start;
+}
+
+/* ===== 按钮 ===== */
+.toolbar-btn {
+    height: 28px;
+    padding: 0 12px;
+    border-radius: 4px;
+    background-color: #3a3a3a;
+    border-width: 1px;
+    border-color: #555;
+    color: #ddd;
+    font-size: 13px;
+}
+
+.toolbar-btn:hover {
+    background-color: #4a4a4a;
+}
+
+/* ===== 关卡名 ===== */
+.field-value {
+    font-size: 13px;
+    color: #ddd;
+    flex-grow: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.field-input {
+    flex-grow: 1;
+    min-width: 0;
+    margin-right: 6px;
+    align-self: stretch;
+}
+
+/* 单行：给足高度并收紧上下 padding，避免白底框里只剩一条细线文字 */
+.field-input .unity-base-field__input,
+.field-input .unity-text-field__input,
+.field-input .unity-base-text-field__input {
+    background-color: #ffffff;
+    color: #222222;
+    min-height: 30px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    justify-content: flex-start;
+}
+
+.field-input TextElement {
+    color: #222222;
+    -unity-text-align: middle-left;
+}
+
+.field-input TextInput {
+    color: #222;
+}
+
+.tag-input TextInput {
+    color: #222;
+}
+
+/* ===== 标签 ===== */
+.tag-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+}
+
+.tag-chip {
+    flex-direction: row;
+    align-items: center;
+    background-color: #3a3a5a;
+    border-radius: 8px;
+    padding: 2px 4px 2px 8px;
+    margin: 2px;
+}
+
+.tag-chip__label {
+    font-size: 11px;
+    color: #bbc;
+}
+
+.tag-chip__remove {
+    background-color: transparent;
+    border-width: 0;
+    color: #888;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    margin: 0 0 0 2px;
+    -unity-text-align: middle-center;
+}
+
+.tag-chip__remove:hover {
+    color: #e55;
+}
+
+.tag-input {
+    flex-grow: 1;
+    min-width: 80px;
+    margin-right: 4px;
+}
+
+.tag-dropdown {
+    width: 140px;
+    margin-left: 4px;
+}
+
+.bgm-dropdown {
+    width: auto;
+}
+
+.sfx-dropdown {
+    width: auto;
+}
+
+/* Dropdown 在浅色输入区内使用黑字，避免灰底白字看不清 */
+.tag-dropdown .unity-base-field__input,
+.tag-dropdown .unity-popup-field__input,
+.tag-dropdown .unity-enum-field__input,
+.bgm-dropdown .unity-base-field__input,
+.bgm-dropdown .unity-popup-field__input,
+.bgm-dropdown .unity-enum-field__input,
+.sfx-dropdown .unity-base-field__input,
+.sfx-dropdown .unity-popup-field__input,
+.sfx-dropdown .unity-enum-field__input {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.tag-dropdown .unity-popup-field__text,
+.tag-dropdown .unity-base-popup-field__text,
+.tag-dropdown .unity-enum-field__text,
+.tag-dropdown .unity-text-element,
+.bgm-dropdown .unity-popup-field__text,
+.bgm-dropdown .unity-base-popup-field__text,
+.bgm-dropdown .unity-enum-field__text,
+.bgm-dropdown .unity-text-element,
+.sfx-dropdown .unity-popup-field__text,
+.sfx-dropdown .unity-base-popup-field__text,
+.sfx-dropdown .unity-enum-field__text,
+.sfx-dropdown .unity-text-element {
+    color: #000000;
+}
+
+/* ===== 难度评分 ===== */
+.rating-row {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.star-container {
+    flex-direction: row;
+    margin-right: 8px;
+}
+
+.star {
+    font-size: 16px;
+    margin: 0 1px;
+}
+
+.star--full {
+    color: #FFD700;
+}
+
+.star--half {
+    color: #FFA500;
+}
+
+.star--empty {
+    color: #555555;
+}
+
+.rating-number {
+    font-size: 12px;
+    color: #aaa;
+}
+
+/* ===== 通关状态 ===== */
+.solvable-text {
+    font-size: 13px;
+}
+
+.solvable--yes {
+    color: #44DD55;
+}
+
+.solvable--no {
+    color: #AA4444;
+}
+
+/* ===== 评论 ===== */
+.comment-display {
+    font-size: 13px;
+    color: #aaa;
+    white-space: normal;
+    margin-bottom: 6px;
+}
+
+.comment-input {
+    width: 100%;
+    min-height: 88px;
+    margin-bottom: 6px;
+}
+
+.comment-input .unity-base-field__input,
+.comment-input .unity-text-field__input,
+.comment-input .unity-base-text-field__input {
+    background-color: #ffffff;
+    color: #222222;
+    min-height: 80px;
+    padding: 6px 8px;
+    align-self: stretch;
+}
+
+.comment-input TextInput {
+    color: #222222;
+    white-space: normal;
+    -unity-text-align: upper-left;
+}
+
+.comment-input TextElement {
+    color: #222222;
+    white-space: normal;
+    -unity-text-align: upper-left;
+}
+
+/* ===== 保存并关闭 ===== */
+.bottom-buttons {
+    margin-top: 8px;
+    justify-content: space-between;
+}
+
+.save-close-btn {
+    height: 34px;
+    flex-grow: 1;
+    margin-right: 6px;
+    border-radius: 4px;
+    background-color: #3a4a6a;
+    border-width: 1px;
+    border-color: #5a6a8a;
+    color: #dde;
+    font-size: 14px;
+}
+
+.save-close-btn:hover {
+    background-color: #4a5a7a;
+}
+
+.discard-close-btn {
+    height: 34px;
+    flex-grow: 0;
+    padding: 0 16px;
+    border-radius: 4px;
+    background-color: #3a3a3a;
+    border-width: 1px;
+    border-color: #555;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.discard-close-btn:hover {
+    background-color: #4a4a4a;
+    color: #ddd;
+}

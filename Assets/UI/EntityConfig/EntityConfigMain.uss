@@ -1,0 +1,420 @@
+/* ===== 全局 ===== */
+* {
+    color: #ddd;
+}
+
+.hidden {
+    display: none;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+/* ===== 顶栏 ===== */
+#top-bar {
+    flex-direction: row;
+    align-items: center;
+    height: 44px;
+    padding: 0 8px;
+    background-color: #2a2a2a;
+    border-bottom-width: 1px;
+    border-bottom-color: #444;
+}
+
+.title-label {
+    font-size: 16px;
+    -unity-font-style: bold;
+    color: #eee;
+    margin-right: 12px;
+}
+
+.toolbar-btn {
+    height: 28px;
+    padding: 0 12px;
+    margin: 0 4px;
+    border-radius: 4px;
+    background-color: #3a3a3a;
+    border-width: 1px;
+    border-color: #555;
+    color: #ddd;
+    font-size: 13px;
+}
+
+.toolbar-btn:hover {
+    background-color: #4a4a4a;
+}
+
+.panel-header {
+    font-size: 13px;
+    -unity-font-style: bold;
+    padding: 6px 8px;
+    background-color: #333;
+    border-bottom-width: 1px;
+    border-bottom-color: #444;
+    color: #ccc;
+}
+
+/* ===== 主区域 ===== */
+#main-area {
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+/* --- 左栏：实体列表 --- */
+#entity-list-panel {
+    width: 35%;
+    min-width: 260px;
+    border-right-width: 1px;
+    border-right-color: #444;
+}
+
+#entity-scroll {
+    flex-grow: 1;
+}
+
+#entity-list-container {
+    padding: 4px;
+}
+
+.entity-list-item {
+    flex-direction: row;
+    align-items: center;
+    padding: 6px 8px;
+    margin: 2px 4px;
+    border-radius: 4px;
+    background-color: #2e2e2e;
+}
+
+.entity-list-item:hover {
+    background-color: #383838;
+}
+
+.entity-list-item--selected {
+    background-color: #2a4a7a;
+}
+
+.entity-list-item--selected:hover {
+    background-color: #3060a0;
+}
+
+.entity-list-item__icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.entity-list-item__info {
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.entity-list-item__name {
+    font-size: 13px;
+    color: #eee;
+}
+
+.entity-list-item__id {
+    font-size: 11px;
+    color: #888;
+}
+
+/* --- 右栏：Inspector --- */
+#inspector-panel {
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+#inspector-content {
+    padding: 12px;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+#inspector-scroll {
+    flex-grow: 1;
+}
+
+/* 保留滚动能力，但隐藏滚动条 */
+#inspector-scroll .unity-scroll-view__vertical-scroller,
+#inspector-scroll .unity-scroll-view__horizontal-scroller {
+    display: none;
+}
+
+.placeholder-text {
+    color: #666;
+    font-size: 13px;
+    -unity-text-align: middle-center;
+    margin-top: 40px;
+}
+
+/* Inspector 头部 */
+#inspector-header-row {
+    flex-direction: row;
+    margin-bottom: 16px;
+    align-items: center;
+}
+
+#inspector-sprite-preview {
+    width: 64px;
+    height: 64px;
+    margin-right: 12px;
+    -unity-background-scale-mode: scale-to-fit;
+    background-color: #222;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: #444;
+}
+
+#inspector-header-info {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inspector-id-label {
+    font-size: 18px;
+    -unity-font-style: bold;
+    color: #eee;
+}
+
+.inspector-type-index-label {
+    font-size: 12px;
+    color: #888;
+    margin-top: 2px;
+}
+
+.inspector-readonly-hint {
+    font-size: 12px;
+    color: #aaa;
+    margin-bottom: 8px;
+    padding: 6px 8px;
+    background-color: #262626;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: #444;
+    white-space: normal;
+}
+
+/* Inspector 字段 */
+.inspector-section-label {
+    font-size: 11px;
+    color: #777;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    -unity-font-style: bold;
+}
+
+.inspector-textfield {
+    margin-bottom: 4px;
+}
+
+.inspector-decoration-toggle {
+    margin-top: 8px;
+}
+
+.inspector-decoration-hint {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 4px;
+    margin-bottom: 6px;
+    padding: 6px 8px;
+    background-color: #262626;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: #444;
+    white-space: normal;
+}
+
+.inspector-dropdown {
+    margin-bottom: 4px;
+    background-color: #ffffff;
+    border-color: #999999;
+}
+
+/* TextField / IntegerField 内部输入框文字颜色 */
+.inspector-textfield .unity-base-field__input,
+.inspector-textfield .unity-text-field__input,
+.inspector-textfield .unity-base-text-field__input,
+.inspector-dropdown .unity-base-field__input {
+    color: #000;
+}
+
+.inspector-dropdown .unity-base-field__input,
+.inspector-dropdown .unity-popup-field__input,
+.inspector-dropdown .unity-enum-field__input {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.inspector-dropdown .unity-popup-field__text,
+.inspector-dropdown .unity-base-popup-field__text,
+.inspector-dropdown .unity-enum-field__text,
+.inspector-dropdown .unity-text-element {
+    color: #000000;
+}
+
+.inspector-textfield TextElement,
+.inspector-dropdown TextElement {
+    color: #000;
+}
+
+/* 组件 toggle 容器 */
+#inspector-components-container {
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+.component-toggle {
+    flex-direction: row;
+    align-items: center;
+    margin: 2px 0;
+}
+
+.component-toggle Label {
+    font-size: 13px;
+    margin-left: 4px;
+}
+
+#inspector-component-sfx-container {
+    margin-top: 2px;
+    margin-bottom: 8px;
+}
+
+.component-sfx-row {
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.component-sfx-label {
+    font-size: 12px;
+    color: #ccc;
+    margin-bottom: 2px;
+}
+
+.component-sfx-dropdown {
+    width: auto;
+    margin-left: 0;
+    background-color: #ffffff;
+    border-color: #999999;
+}
+
+.component-sfx-dropdown .unity-base-field__input,
+.component-sfx-dropdown .unity-popup-field__input,
+.component-sfx-dropdown .unity-enum-field__input,
+.component-sfx-dropdown TextElement {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+/* Inspector 操作按钮 */
+#inspector-buttons {
+    flex-direction: row;
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top-width: 1px;
+    border-top-color: #444;
+}
+
+.apply-btn {
+    background-color: #3a5a3a;
+    border-color: #5a8a5a;
+    color: #adc;
+}
+
+.apply-btn:hover {
+    background-color: #4a7a4a;
+}
+
+/* 删除按钮 */
+.delete-btn {
+    height: 28px;
+    padding: 0 12px;
+    margin: 0 4px;
+    border-radius: 4px;
+    background-color: #6a3a3a;
+    border-width: 1px;
+    border-color: #8a5a5a;
+    color: #ebb;
+    font-size: 13px;
+}
+
+.delete-btn:hover {
+    background-color: #8a4a4a;
+}
+
+.delete-btn:disabled {
+    opacity: 0.4;
+}
+
+/* ===== 弹窗 ===== */
+.modal-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-dialog {
+    width: 400px;
+    max-width: 90%;
+    padding: 20px;
+    background-color: #2e2e2e;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: #555;
+    flex-direction: column;
+}
+
+.modal-title {
+    font-size: 16px;
+    -unity-font-style: bold;
+    color: #eee;
+    margin-bottom: 12px;
+}
+
+.modal-label {
+    font-size: 12px;
+    color: #aaa;
+    margin-bottom: 4px;
+}
+
+.modal-textfield {
+    margin-bottom: 8px;
+}
+
+.modal-textfield .unity-base-field__input,
+.modal-textfield .unity-text-field__input,
+.modal-textfield .unity-base-text-field__input {
+    color: #000;
+}
+
+.modal-textfield TextElement {
+    color: #000;
+}
+
+.modal-error {
+    font-size: 12px;
+    color: #e88;
+    min-height: 18px;
+    margin-bottom: 12px;
+    white-space: normal;
+}
+
+.modal-buttons {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.exit-confirm-buttons {
+    flex-direction: column;
+    margin-top: 8px;
+}
+
+.exit-confirm-buttons .toolbar-btn {
+    margin: 4px 0;
+}

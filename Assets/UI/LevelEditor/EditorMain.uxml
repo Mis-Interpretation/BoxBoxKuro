@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <ui:Template name="HUD" src="project://database/Assets/UI/LevelEditor/EditorHUD.uxml"/>
+    <ui:Template name="Palette" src="project://database/Assets/UI/LevelEditor/EditorPalette.uxml"/>
+    <ui:Template name="Metadata" src="project://database/Assets/UI/LevelEditor/EditorMetadata.uxml"/>
+
+    <ui:VisualElement name="editor-main-root" picking-mode="Ignore"
+                       style="position: absolute; left: 0; top: 0; right: 0; bottom: 0;">
+        <ui:Instance template="HUD" name="hud-instance" picking-mode="Ignore"
+                     style="position: absolute; left: 0; top: 0; right: 0; bottom: 0;"/>
+        <ui:Instance template="Palette" name="palette-instance" picking-mode="Ignore"
+                     style="position: absolute; left: 0; top: 0; right: 0; bottom: 0;"/>
+        <ui:Instance template="Metadata" name="metadata-instance" picking-mode="Ignore"
+                     style="position: absolute; left: 0; top: 0; right: 0; bottom: 0;"/>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,76 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/LevelEditor/EditorMetadata.uss"/>
+    <ui:VisualElement name="metadata-root" class="metadata-root">
+
+        <!-- 关卡名 -->
+        <ui:VisualElement name="section-level-name" class="section">
+            <ui:Label text="关卡名" class="section-label"/>
+            <ui:VisualElement class="row">
+                <ui:Label name="level-name-display" text="（未命名）" class="field-value"/>
+                <ui:TextField name="level-name-input" class="field-input hidden"/>
+                <ui:Button name="level-name-edit-btn" text="编辑" class="toolbar-btn"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- 显示名 -->
+        <ui:VisualElement name="section-display-name" class="section">
+            <ui:Label text="显示名" class="section-label"/>
+            <ui:VisualElement class="row">
+                <ui:Label name="display-name-display" text="（使用文件名）" class="field-value"/>
+                <ui:TextField name="display-name-input" class="field-input hidden"/>
+                <ui:Button name="display-name-edit-btn" text="编辑" class="toolbar-btn"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- BGM -->
+        <ui:VisualElement name="section-bgm" class="section">
+            <ui:Label text="BGM" class="section-label"/>
+            <ui:DropdownField name="bgm-dropdown" class="bgm-dropdown"/>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="section-complete-sfx" class="section">
+            <ui:Label text="通关音效" class="section-label"/>
+            <ui:DropdownField name="level-complete-sfx-dropdown" class="sfx-dropdown"/>
+        </ui:VisualElement>
+
+        <!-- 标签 -->
+        <ui:VisualElement name="section-tags" class="section">
+            <ui:Label text="标签" class="section-label"/>
+            <ui:VisualElement name="tag-chip-container" class="tag-container"/>
+            <ui:VisualElement class="row">
+                <ui:TextField name="tag-input" class="tag-input"/>
+                <ui:Button name="tag-add-btn" text="添加" class="toolbar-btn"/>
+                <ui:DropdownField name="tag-dropdown" class="tag-dropdown"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- 难度指数 -->
+        <ui:VisualElement name="section-rating" class="section">
+            <ui:Label text="难度指数" class="section-label"/>
+            <ui:SliderInt name="rating-slider" low-value="0" high-value="10" value="0"/>
+            <ui:VisualElement class="rating-row">
+                <ui:VisualElement name="star-container" class="star-container"/>
+                <ui:Label name="rating-number" class="rating-number"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- 通关状态 -->
+        <ui:VisualElement name="section-solvable" class="section">
+            <ui:Label name="solvable-text" class="solvable-text"/>
+        </ui:VisualElement>
+
+        <!-- 备注 -->
+        <ui:VisualElement name="section-comment" class="section">
+            <ui:Label text="备注" class="section-label"/>
+            <ui:Label name="comment-display" class="comment-display"/>
+            <ui:TextField name="comment-input" multiline="true" class="comment-input hidden"/>
+            <ui:Button name="comment-edit-btn" text="编辑" class="toolbar-btn"/>
+        </ui:VisualElement>
+
+        <!-- 底部按钮 -->
+        <ui:VisualElement class="row bottom-buttons">
+            <ui:Button name="save-close-btn" text="保存并关闭" class="save-close-btn"/>
+            <ui:Button name="discard-close-btn" text="关闭" class="discard-close-btn"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

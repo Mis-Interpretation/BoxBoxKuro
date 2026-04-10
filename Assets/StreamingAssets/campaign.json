@@ -1,0 +1,59 @@
+{
+    "Chapters": [
+        {
+            "ChapterName": "入门",
+            "Comment": "基础操作教学",
+            "Unlock": {
+                "Type": 0,
+                "RequiredStars": 0
+            },
+            "IsOnline": true,
+            "Levels": [
+                "tutorial_01",
+                "tutorial_02",
+                "test_0",
+                "test_3",
+                "test_artistic"
+            ]
+        },
+        {
+            "ChapterName": "有点麻烦的关卡",
+            "Comment": "纯纯为了难度而上难度",
+            "Unlock": {
+                "Type": 1,
+                "RequiredStars": 0
+            },
+            "IsOnline": true,
+            "Levels": [
+                "caleb-01",
+                "boxxle-1",
+                "boxxle-15",
+                "boxxle-20",
+                "test_1"
+            ]
+        },
+        {
+            "ChapterName": "还在施工中的关卡",
+            "Comment": "",
+            "Unlock": {
+                "Type": 1,
+                "RequiredStars": 0
+            },
+            "IsOnline": false,
+            "Levels": [
+                "dangerous_0",
+                "bad_01"
+            ]
+        },
+        {
+            "ChapterName": "测试章节排序用",
+            "Comment": "纯纯测试用",
+            "Unlock": {
+                "Type": 1,
+                "RequiredStars": 0
+            },
+            "IsOnline": false,
+            "Levels": []
+        }
+    ]
+}

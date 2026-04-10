@@ -1,0 +1,103 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Arrangement/ArrangementMain.uss?fileID=7433441132597879392&amp;guid=89023f802db0c3f43bcb2aa278bb440e&amp;type=3#ArrangementMain"/>
+    <ui:VisualElement name="top-bar">
+        <ui:Label text="关卡编排" class="title-label"/>
+        <ui:VisualElement class="spacer"/>
+        <ui:Button name="save-btn" text="保存" class="toolbar-btn"/>
+        <ui:Button name="add-chapter-btn" text="+ 大关卡" class="toolbar-btn"/>
+        <ui:Button name="back-btn" text="返回" class="toolbar-btn"/>
+    </ui:VisualElement>
+    <ui:VisualElement name="main-area">
+        <ui:VisualElement name="chapter-panel">
+            <ui:Label text="大关卡" class="panel-header"/>
+            <ui:ListView name="chapter-list"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="level-panel">
+            <ui:Label name="chapter-header" text="请选择一个大关卡" class="panel-header"/>
+            <ui:ListView name="level-list"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="preview-panel">
+            <ui:Label text="关卡预览" class="panel-header"/>
+            <ui:VisualElement name="preview-content">
+                <ui:Label name="preview-placeholder" text="点击关卡查看详情" class="placeholder-text"/>
+                <ui:VisualElement name="preview-details" class="hidden">
+                    <ui:Label name="preview-name" class="preview-field preview-name"/>
+                    <ui:Label name="preview-index" class="preview-field preview-index"/>
+                    <ui:Label name="preview-size" class="preview-field"/>
+                    <ui:Label name="preview-entity-count" class="preview-field"/>
+                    <ui:Label text="标签" class="preview-section-label"/>
+                    <ui:VisualElement name="preview-tags" class="tag-container"/>
+                    <ui:Label text="难度指数" class="preview-section-label"/>
+                    <ui:Label name="preview-stars" class="preview-field preview-stars"/>
+                    <ui:Label name="preview-solvable" class="preview-field"/>
+                    <ui:Label text="备注" class="preview-section-label"/>
+                    <ui:Label name="preview-comment" class="preview-field preview-comment"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <!-- 章节详情（选中章节未选关卡时显示） -->
+            <ui:VisualElement name="chapter-details" class="hidden" style="padding: 8px;">
+                <ui:Label name="chapter-detail-name" class="preview-field preview-name"/>
+                <ui:Label name="chapter-detail-level-count" class="preview-field preview-index"/>
+                <ui:Label name="chapter-detail-warning" class="preview-field chapter-detail-warning hidden" text=""/>
+                <ui:Label text="解锁条件" class="preview-section-label"/>
+                <ui:Label name="chapter-detail-unlock" class="preview-field"/>
+                <ui:Label text="备注" class="preview-section-label"/>
+                <ui:Label name="chapter-detail-comment" class="preview-field preview-comment"/>
+                <ui:Button name="chapter-edit-btn" text="编辑章节信息" class="preview-edit-btn"/>
+            </ui:VisualElement>
+            <ui:Button name="preview-edit-btn" text="编辑关卡" class="preview-edit-btn"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="unassigned-panel" style="height: 225px;">
+        <ui:VisualElement name="unassigned-panel-header" class="unassigned-panel-header">
+            <ui:Label text="未分配关卡" class="unassigned-panel-title"/>
+            <ui:VisualElement class="spacer"/>
+            <ui:Button name="unassigned-new-btn" text="新增关卡" class="toolbar-btn"/>
+        </ui:VisualElement>
+        <ui:ScrollView name="unassigned-scroll" mode="Horizontal">
+            <ui:VisualElement name="unassigned-container"/>
+        </ui:ScrollView>
+    </ui:VisualElement>
+    <ui:VisualElement name="new-level-modal" class="modal-overlay hidden" picking-mode="Position">
+        <ui:VisualElement class="modal-dialog" picking-mode="Position">
+            <ui:Label text="新建关卡" class="modal-title"/>
+            <ui:Label text="关卡名称（不含 .json）" class="modal-label"/>
+            <ui:TextField name="new-level-name-field" class="modal-textfield"/>
+            <ui:Label name="new-level-error" class="modal-error"/>
+            <ui:VisualElement class="modal-buttons">
+                <ui:Button name="new-level-confirm" text="确定" class="toolbar-btn"/>
+                <ui:Button name="new-level-cancel" text="取消" class="toolbar-btn"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <!-- 章节编辑弹窗 -->
+    <ui:VisualElement name="chapter-edit-modal" class="modal-overlay hidden" picking-mode="Position">
+        <ui:VisualElement class="modal-dialog" picking-mode="Position">
+            <ui:Label text="编辑章节" class="modal-title"/>
+            <ui:Label text="章节名称" class="modal-label"/>
+            <ui:TextField name="chapter-edit-name-field" class="modal-textfield"/>
+            <ui:Label text="备注" class="modal-label"/>
+            <ui:TextField name="chapter-edit-comment-field" multiline="true" class="modal-textfield" style="height: 60px;"/>
+            <ui:Toggle name="chapter-edit-online-toggle" label="已上线（玩家可见）" class="modal-textfield"/>
+            <ui:Label text="解锁条件" class="modal-label"/>
+            <ui:DropdownField name="chapter-edit-unlock-type" class="modal-textfield"/>
+            <ui:Label name="chapter-edit-stars-label" text="所需关数" class="modal-label hidden"/>
+            <ui:IntegerField name="chapter-edit-required-stars" class="modal-textfield hidden" value="0"/>
+            <ui:VisualElement class="modal-buttons">
+                <ui:Button name="chapter-edit-confirm" text="确定" class="toolbar-btn"/>
+                <ui:Button name="chapter-edit-cancel" text="取消" class="toolbar-btn"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <!-- 返回确认（与 LevelEditor 退出确认同一交互） -->
+    <ui:VisualElement name="exit-confirm-overlay" class="modal-overlay hidden" picking-mode="Position">
+        <ui:VisualElement class="modal-dialog" picking-mode="Position">
+            <ui:Label text="离开前是否保存战役编排？" class="modal-title"/>
+            <ui:VisualElement class="exit-confirm-buttons">
+                <ui:Button name="exit-save-btn" text="保存并退出" class="toolbar-btn"/>
+                <ui:Button name="exit-discard-btn" text="直接退出" class="toolbar-btn"/>
+                <ui:Button name="exit-cancel-btn" text="取消" class="toolbar-btn"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

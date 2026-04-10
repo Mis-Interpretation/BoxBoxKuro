@@ -1,0 +1,90 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/EntityConfig/EntityConfigMain.uss?fileID=7433441132597879392&amp;guid=0f38e05b98d5d004ead76192d988ecf9&amp;type=3#EntityConfigMain"/>
+    <ui:VisualElement name="top-bar">
+        <ui:Label text="实体配置编辑器" class="title-label"/>
+        <ui:VisualElement class="spacer"/>
+        <ui:Button name="save-btn" text="保存" class="toolbar-btn"/>
+        <ui:Button name="new-entity-btn" text="+ 新实体" class="toolbar-btn"/>
+        <ui:Button name="back-btn" text="返回" class="toolbar-btn"/>
+    </ui:VisualElement>
+    <ui:VisualElement name="main-area">
+        <ui:VisualElement name="entity-list-panel">
+            <ui:Label text="实体列表" class="panel-header"/>
+            <ui:ScrollView name="entity-scroll">
+                <ui:VisualElement name="entity-list-container"/>
+            </ui:ScrollView>
+        </ui:VisualElement>
+        <ui:VisualElement name="inspector-panel">
+            <ui:Label text="实体详情" class="panel-header"/>
+            <ui:VisualElement name="inspector-content">
+                <ui:ScrollView name="inspector-scroll" mode="VerticalAndHorizontal">
+                    <ui:Label name="inspector-placeholder" text="点击实体查看详情" class="placeholder-text"/>
+                    <ui:VisualElement name="inspector-details" class="hidden">
+                        <ui:VisualElement name="inspector-header-row">
+                            <ui:VisualElement name="inspector-sprite-preview"/>
+                            <ui:VisualElement name="inspector-header-info">
+                                <ui:Label name="inspector-id" class="inspector-id-label"/>
+                                <ui:Label name="inspector-type-index" class="inspector-type-index-label"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:Label name="inspector-readonly-hint" text="基础实体：允许修改显示名称、Sprite 与组件音效；其余字段只读" class="inspector-readonly-hint hidden"/>
+                        <ui:Label text="显示名称" class="inspector-section-label"/>
+                        <ui:TextField name="inspector-displayname-field" class="inspector-textfield"/>
+                        <ui:Label text="Sprite" class="inspector-section-label"/>
+                        <ui:DropdownField name="inspector-sprite-dropdown" class="inspector-dropdown"/>
+                        <ui:Label text="OrderInLayer" class="inspector-section-label"/>
+                        <ui:IntegerField name="inspector-order-field" class="inspector-textfield"/>
+                        <ui:Toggle name="inspector-pure-decoration-toggle" text="纯装饰物（IsPureDecoration）" class="inspector-decoration-toggle"/>
+                        <ui:Label name="inspector-pure-decoration-hint" text="勾选后：该实体不会添加任何玩法组件，不影响阻挡/推动/重叠判定；已有组件配置会被保留，但运行时忽略。" class="inspector-decoration-hint"/>
+                        <ui:Label text="组件" class="inspector-section-label"/>
+                        <ui:VisualElement name="inspector-components-container"/>
+                        <ui:Label text="组件音效覆盖（默认 none）" class="inspector-section-label"/>
+                        <ui:VisualElement name="inspector-component-sfx-container"/>
+                        <ui:VisualElement name="inspector-buttons">
+                            <ui:Button name="inspector-apply-btn" text="应用修改" class="toolbar-btn apply-btn"/>
+                            <ui:Button name="inspector-cancel-btn" text="取消" class="toolbar-btn"/>
+                            <ui:VisualElement class="spacer"/>
+                            <ui:Button name="inspector-delete-btn" text="删除实体" class="delete-btn"/>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:ScrollView>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="new-entity-modal" picking-mode="Position" class="modal-overlay hidden">
+        <ui:VisualElement picking-mode="Position" class="modal-dialog">
+            <ui:Label text="新建实体" class="modal-title"/>
+            <ui:Label text="实体 Id（唯一标识，创建后不可修改）" class="modal-label"/>
+            <ui:TextField name="new-entity-id-field" class="modal-textfield"/>
+            <ui:Label text="显示名称" class="modal-label"/>
+            <ui:TextField name="new-entity-displayname-field" class="modal-textfield"/>
+            <ui:Label text="Sprite" class="modal-label"/>
+            <ui:DropdownField name="new-entity-sprite-dropdown" class="modal-textfield"/>
+            <ui:Label name="new-entity-error" class="modal-error"/>
+            <ui:VisualElement class="modal-buttons">
+                <ui:Button name="new-entity-confirm" text="确定" class="toolbar-btn"/>
+                <ui:Button name="new-entity-cancel" text="取消" class="toolbar-btn"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="delete-confirm-modal" picking-mode="Position" class="modal-overlay hidden">
+        <ui:VisualElement picking-mode="Position" class="modal-dialog">
+            <ui:Label text="确认删除" class="modal-title"/>
+            <ui:Label name="delete-confirm-message" text="" class="modal-label"/>
+            <ui:VisualElement class="modal-buttons">
+                <ui:Button name="delete-confirm-btn" text="删除" class="delete-btn"/>
+                <ui:Button name="delete-cancel-btn" text="取消" class="toolbar-btn"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="exit-confirm-overlay" picking-mode="Position" class="modal-overlay hidden">
+        <ui:VisualElement picking-mode="Position" class="modal-dialog">
+            <ui:Label text="离开前是否保存实体配置？" class="modal-title"/>
+            <ui:VisualElement class="exit-confirm-buttons">
+                <ui:Button name="exit-save-btn" text="保存并退出" class="toolbar-btn"/>
+                <ui:Button name="exit-discard-btn" text="直接退出" class="toolbar-btn"/>
+                <ui:Button name="exit-cancel-btn" text="取消" class="toolbar-btn"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

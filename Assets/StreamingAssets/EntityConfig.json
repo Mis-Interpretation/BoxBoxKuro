@@ -1,0 +1,200 @@
+{
+    "Entities": [
+        {
+            "Id": "Player",
+            "DisplayName": "Player",
+            "TypeIndex": 0,
+            "SpritePath": "Sprites/Player",
+            "OrderInLayer": 1,
+            "Components": [
+                "MovableModel",
+                "ControllableModel",
+                "BlockingModel"
+            ],
+            "ComponentSfx": [],
+            "ComponentSfxOverrides": [
+                {
+                    "ComponentName": "ControllableModel",
+                    "SfxPath": "Sound/SFX/quick-fart"
+                }
+            ],
+            "IsPureDecoration": false,
+            "IsTextEntity": false
+        },
+        {
+            "Id": "Block",
+            "DisplayName": "Block",
+            "TypeIndex": 1,
+            "SpritePath": "Sprites/block_new",
+            "OrderInLayer": 1,
+            "Components": [
+                "BlockingModel"
+            ],
+            "ComponentSfx": [],
+            "ComponentSfxOverrides": [],
+            "IsPureDecoration": false,
+            "IsTextEntity": false
+        },
+        {
+            "Id": "Box",
+            "DisplayName": "Box",
+            "TypeIndex": 2,
+            "SpritePath": "Sprites/box_new",
+            "OrderInLayer": 1,
+            "Components": [
+                "MovableModel",
+                "BlockingModel",
+                "PushableModel"
+            ],
+            "ComponentSfx": [],
+            "ComponentSfxOverrides": [
+                {
+                    "ComponentName": "PushableModel",
+                    "SfxPath": "Sound/SFX/box-move"
+                }
+            ],
+            "IsPureDecoration": false,
+            "IsTextEntity": false
+        },
+        {
+            "Id": "Endpoint",
+            "DisplayName": "Endpoint",
+            "TypeIndex": 3,
+            "SpritePath": "Sprites/Endpoint",
+            "OrderInLayer": 0,
+            "Components": [
+                "OverlappableModel"
+            ],
+            "ComponentSfx": [],
+            "ComponentSfxOverrides": [],
+            "IsPureDecoration": false,
+            "IsTextEntity": false
+        },
+        {
+            "Id": "push_block",
+            "DisplayName": "Pushable Block",
+            "TypeIndex": 4,
+            "SpritePath": "Sprites/Block",
+            "OrderInLayer": 1,
+            "Components": [
+                "MovableModel",
+                "BlockingModel",
+                "PushableModel"
+            ],
+            "ComponentSfx": [],
+            "ComponentSfxOverrides": [],
+            "IsPureDecoration": false,
+            "IsTextEntity": false
+        },
+        {
+            "Id": "art_grass",
+            "DisplayName": "只是一棵草",
+            "TypeIndex": 5,
+            "SpritePath": "Sprites/just_grass",
+            "OrderInLayer": 0,
+            "Components": [
+                "BlockingModel"
+            ],
+            "ComponentSfx": [],
+            "ComponentSfxOverrides": [],
+            "IsPureDecoration": true,
+            "IsTextEntity": false
+        },
+        {
+            "Id": "Text",
+            "DisplayName": "Text",
+            "TypeIndex": 6,
+            "SpritePath": "none",
+            "OrderInLayer": 0,
+            "Components": [],
+            "ComponentSfx": [],
+            "ComponentSfxOverrides": [],
+            "IsPureDecoration": true,
+            "IsTextEntity": false
+        },
+        {
+            "Id": "w",
+            "DisplayName": "W",
+            "TypeIndex": 7,
+            "SpritePath": "Sprites/W",
+            "OrderInLayer": 1,
+            "Components": [],
+            "ComponentSfx": [],
+            "ComponentSfxOverrides": [],
+            "IsPureDecoration": true,
+            "IsTextEntity": false
+        },
+        {
+            "Id": "A",
+            "DisplayName": "A",
+            "TypeIndex": 8,
+            "SpritePath": "Sprites/A",
+            "OrderInLayer": 1,
+            "Components": [],
+            "ComponentSfx": [],
+            "ComponentSfxOverrides": [],
+            "IsPureDecoration": true,
+            "IsTextEntity": false
+        },
+        {
+            "Id": "S",
+            "DisplayName": "S",
+            "TypeIndex": 9,
+            "SpritePath": "Sprites/S",
+            "OrderInLayer": 1,
+            "Components": [],
+            "ComponentSfx": [],
+            "ComponentSfxOverrides": [],
+            "IsPureDecoration": true,
+            "IsTextEntity": false
+        },
+        {
+            "Id": "D",
+            "DisplayName": "D",
+            "TypeIndex": 10,
+            "SpritePath": "Sprites/D",
+            "OrderInLayer": 1,
+            "Components": [],
+            "ComponentSfx": [],
+            "ComponentSfxOverrides": [],
+            "IsPureDecoration": true,
+            "IsTextEntity": false
+        },
+        {
+            "Id": "Z",
+            "DisplayName": "Z",
+            "TypeIndex": 11,
+            "SpritePath": "Sprites/Z",
+            "OrderInLayer": 1,
+            "Components": [],
+            "ComponentSfx": [],
+            "ComponentSfxOverrides": [],
+            "IsPureDecoration": true,
+            "IsTextEntity": false
+        },
+        {
+            "Id": "R",
+            "DisplayName": "R",
+            "TypeIndex": 12,
+            "SpritePath": "Sprites/R",
+            "OrderInLayer": 1,
+            "Components": [],
+            "ComponentSfx": [],
+            "ComponentSfxOverrides": [],
+            "IsPureDecoration": true,
+            "IsTextEntity": false
+        },
+        {
+            "Id": "ESC",
+            "DisplayName": "ESC",
+            "TypeIndex": 13,
+            "SpritePath": "Sprites/ESC",
+            "OrderInLayer": 1,
+            "Components": [],
+            "ComponentSfx": [],
+            "ComponentSfxOverrides": [],
+            "IsPureDecoration": true,
+            "IsTextEntity": false
+        }
+    ]
+}

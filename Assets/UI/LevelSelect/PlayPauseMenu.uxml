@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/LevelSelect/PlayPauseMenu.uss"/>
+    <ui:VisualElement name="pause-menu-overlay" class="hidden">
+        <ui:VisualElement name="pause-menu-panel">
+            <ui:Label name="pause-menu-title" text="游戏菜单" class="pause-menu-title"/>
+            <ui:VisualElement name="pause-menu-buttons">
+                <ui:Button name="pause-continue-btn" text="继续" class="pause-menu-btn pause-menu-btn--primary"/>
+                <ui:Button name="pause-restart-btn" text="重玩" class="pause-menu-btn"/>
+                <ui:Button name="pause-exit-btn" text="退出" class="pause-menu-btn"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,69 @@
+/* ===== 全局 ===== */
+.hidden {
+    display: none;
+}
+
+/* ===== 遮罩层 ===== */
+#level-complete-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== 面板 ===== */
+#level-complete-panel {
+    background-color: #2e2e2e;
+    border-radius: 12px;
+    border-width: 1px;
+    border-color: #555;
+    padding: 32px 48px;
+    align-items: center;
+    min-width: 300px;
+}
+
+/* ===== 标题 ===== */
+.complete-title {
+    font-size: 32px;
+    -unity-font-style: bold;
+    color: #f5d76e;
+    margin-bottom: 24px;
+}
+
+/* ===== 按钮组 ===== */
+#button-group {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+}
+
+/* ===== 按钮 ===== */
+.complete-btn {
+    height: 40px;
+    padding: 0 24px;
+    margin: 4px 0;
+    border-radius: 6px;
+    background-color: #3a3a3a;
+    border-width: 1px;
+    border-color: #555;
+    color: #ddd;
+    font-size: 16px;
+}
+
+.complete-btn:hover {
+    background-color: #4a4a4a;
+}
+
+.complete-btn--primary {
+    background-color: #2a6a3a;
+    border-color: #4a8a5a;
+    color: #eee;
+}
+
+.complete-btn--primary:hover {
+    background-color: #3a7a4a;
+}

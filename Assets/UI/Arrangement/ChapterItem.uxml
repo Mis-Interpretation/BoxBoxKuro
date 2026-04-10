@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:VisualElement class="chapter-item">
+        <ui:Label name="chapter-index" class="chapter-item__index" text="1" />
+        <ui:Label name="chapter-name" class="chapter-item__name" text="Chapter Name" />
+        <ui:Label name="chapter-warning" class="chapter-item__warning" text="" />
+        <ui:Label name="chapter-count" class="chapter-item__count" text="(0)" />
+        <ui:Button name="chapter-delete-btn" class="chapter-item__delete-btn" text="✕" />
+    </ui:VisualElement>
+</ui:UXML>

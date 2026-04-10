@@ -1,0 +1,230 @@
+/* ===== 全局 ===== */
+* {
+    color: #ddd;
+}
+
+.hidden {
+    display: none;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+/* ===== 顶栏 ===== */
+#top-bar {
+    flex-direction: row;
+    align-items: center;
+    height: 48px;
+    padding: 0 12px;
+    background-color: #2a2a2a;
+    border-bottom-width: 1px;
+    border-bottom-color: #444;
+}
+
+.title-label {
+    font-size: 18px;
+    -unity-font-style: bold;
+    color: #eee;
+}
+
+.toolbar-btn {
+    height: 30px;
+    padding: 0 14px;
+    margin: 0 4px;
+    border-radius: 4px;
+    background-color: #3a3a3a;
+    border-width: 1px;
+    border-color: #555;
+    color: #ddd;
+    font-size: 13px;
+}
+
+.toolbar-btn:hover {
+    background-color: #4a4a4a;
+}
+
+.toolbar-btn:disabled {
+    opacity: 0.4;
+}
+
+.progress-summary-label {
+    font-size: 13px;
+    color: #b8d8ff;
+    margin-right: 8px;
+}
+
+/* ===== 主区域 ===== */
+#main-area {
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.panel-header {
+    font-size: 14px;
+    -unity-font-style: bold;
+    padding: 8px 10px;
+    background-color: #333;
+    border-bottom-width: 1px;
+    border-bottom-color: #444;
+    color: #ccc;
+}
+
+/* --- 左侧：章节 --- */
+#chapter-panel {
+    width: 260px;
+    min-width: 200px;
+    border-right-width: 1px;
+    border-right-color: #444;
+}
+
+#chapter-scroll {
+    flex-grow: 1;
+}
+
+.chapter-select-item {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 12px;
+    margin: 2px 6px;
+    border-radius: 6px;
+    background-color: #2e2e2e;
+}
+
+.chapter-select-item:hover {
+    background-color: #383838;
+}
+
+.chapter-select-item--selected {
+    background-color: #2a4a7a;
+}
+
+.chapter-select-item--selected:hover {
+    background-color: #3060a0;
+}
+
+.chapter-select-item--locked {
+    opacity: 0.5;
+}
+
+.chapter-select-index {
+    width: 28px;
+    font-size: 14px;
+    color: #888;
+    -unity-text-align: middle-center;
+}
+
+.chapter-select-name {
+    flex-grow: 1;
+    font-size: 14px;
+    margin: 0 6px;
+}
+
+.chapter-select-lock {
+    font-size: 14px;
+    color: #888;
+}
+
+/* --- 右侧：关卡网格 --- */
+#level-panel {
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.unlock-condition-label {
+    font-size: 12px;
+    color: #9ab6d3;
+    padding: 6px 10px;
+    background-color: #2b2f34;
+    border-bottom-width: 1px;
+    border-bottom-color: #3f4953;
+}
+
+#level-grid {
+    flex-grow: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 12px;
+    align-content: flex-start;
+}
+
+.level-card {
+    width: 22%;
+    margin: 1.5%;
+    padding: 12px;
+    position: relative;
+    border-radius: 8px;
+    background-color: #2e2e2e;
+    border-width: 1px;
+    border-color: #444;
+    align-items: center;
+    justify-content: center;
+    min-height: 90px;
+}
+
+.level-card:hover {
+    background-color: #3a4a5a;
+    border-color: #6a8aaa;
+}
+
+.level-card__index {
+    font-size: 20px;
+    -unity-font-style: bold;
+    color: #eee;
+    margin-bottom: 4px;
+}
+
+.level-card__name {
+    font-size: 14px;
+    color: #aaa;
+    -unity-text-align: middle-center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 4px;
+}
+
+.level-card__cleared-badge {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    background-color: #33aa55;
+    color: #ffffff;
+    -unity-text-align: middle-center;
+    font-size: 12px;
+    -unity-font-style: bold;
+}
+
+.level-grid-hint {
+    margin: 12px;
+    padding: 12px;
+    border-radius: 6px;
+    background-color: #333;
+    color: #c8c8c8;
+    font-size: 13px;
+}
+
+/* --- 分页 --- */
+#pagination-bar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    background-color: #2a2a2a;
+    border-top-width: 1px;
+    border-top-color: #444;
+}
+
+.page-btn {
+    min-width: 80px;
+}
+
+.page-indicator {
+    font-size: 13px;
+    color: #aaa;
+    margin: 0 16px;
+    min-width: 60px;
+    -unity-text-align: middle-center;
+}
