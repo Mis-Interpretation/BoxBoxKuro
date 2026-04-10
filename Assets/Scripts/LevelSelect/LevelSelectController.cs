@@ -254,7 +254,7 @@ public class LevelSelectController : MonoBehaviour
             // 已通关角标
             if (CampaignProgressController.IsLevelCompleted(chapterIdx, levelIdx))
             {
-                var clearedBadge = new Label("✓");
+                var clearedBadge = new Label("\u221A");
                 clearedBadge.AddToClassList("level-card__cleared-badge");
                 card.Add(clearedBadge);
             }

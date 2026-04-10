@@ -68,7 +68,7 @@ public class ChapterListView
         warn.AddToClassList("chapter-item__warning");
         item.Add(warn);
         item.Add(new Label { name = "chapter-count" });
-        item.Add(new Button { name = "chapter-delete-btn", text = "\u2715" });
+        item.Add(new Button { name = "chapter-delete-btn", text = "\u00D7" });
         return item;
     }
 

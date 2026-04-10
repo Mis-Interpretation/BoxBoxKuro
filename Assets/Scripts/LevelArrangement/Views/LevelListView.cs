@@ -96,7 +96,7 @@ public class LevelListView
         row.Add(main);
         row.Add(new Label { name = "level-stars" });
         row.Add(new Label { name = "level-solvable" });
-        var removeBtn = new Button { name = "level-remove-btn", text = "\u2715" };
+        var removeBtn = new Button { name = "level-remove-btn", text = "\u00D7" };
         row.Add(removeBtn);
         return row;
     }
@@ -156,7 +156,7 @@ public class LevelListView
 
             var solvableLabel = element.Q<Label>("level-solvable");
             if (solvableLabel != null)
-                solvableLabel.text = meta.IsSolvable ? "\u2714" : "";
+                solvableLabel.text = meta.IsSolvable ? "\u221A" : "";
 
             if (tagsContainer != null && meta.Tags != null)
             {

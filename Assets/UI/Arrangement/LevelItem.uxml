@@ -8,6 +8,6 @@
         </ui:VisualElement>
         <ui:Label name="level-stars" class="level-item__stars" text="" />
         <ui:Label name="level-solvable" class="level-item__solvable" text="" />
-        <ui:Button name="level-remove-btn" class="level-item__remove-btn" text="✕" />
+        <ui:Button name="level-remove-btn" class="level-item__remove-btn" text="×" />
     </ui:VisualElement>
 </ui:UXML>

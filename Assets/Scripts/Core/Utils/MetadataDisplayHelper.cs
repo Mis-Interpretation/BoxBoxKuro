@@ -54,7 +54,8 @@ public static class MetadataDisplayHelper
     /// </summary>
     public static string BuildSolvableText(bool isSolvable)
     {
-        return isSolvable ? "\u2714 可通关" : "\u2718 未验证";
+        // U+2714/U+2718 在 UITK+Noto 动态字体里常缺字形；用 √ / ×（221A / 00D7）替代
+        return isSolvable ? "\u221A 可通关" : "\u00D7 未验证";
     }
 
     /// <summary>
@@ -63,7 +64,7 @@ public static class MetadataDisplayHelper
     public static string BuildSolvableRichText(bool isSolvable)
     {
         return isSolvable
-            ? "<color=#44DD55>\u2714 可通关</color>"
-            : "<color=#AA4444>\u2718 未验证</color>";
+            ? "<color=#44DD55>\u221A 可通关</color>"
+            : "<color=#AA4444>\u00D7 未验证</color>";
     }
 }

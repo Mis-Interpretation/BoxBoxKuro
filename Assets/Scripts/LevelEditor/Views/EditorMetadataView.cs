@@ -535,7 +535,7 @@ public class EditorMetadataView : MonoBehaviour
 
         bool solvable = _controller.GetIsSolvable();
 
-        _solvableText.text = solvable ? "\u2714 可通关" : "\u2718 未验证";
+        _solvableText.text = solvable ? "\u221A 可通关" : "\u00D7 未验证";
         _solvableText.EnableInClassList("solvable--yes", solvable);
         _solvableText.EnableInClassList("solvable--no", !solvable);
     }

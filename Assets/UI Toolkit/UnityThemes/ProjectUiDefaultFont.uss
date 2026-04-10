@@ -1,0 +1,5 @@
+/* 必须使用 TextCore FontAsset（UnityEngine.TextCore.Text.FontAsset），不要用 TMP_FontAsset。
+ * 资源由 Editor/UitkNotoFontBootstrap 从 NotoSansSC-Regular.ttf 生成：NotoSansSC-Regular_UITK.asset */
+* {
+    -unity-font-definition: url("project://database/Assets/Art/Font/NotoSansSC-Regular_UITK.asset");
+}
