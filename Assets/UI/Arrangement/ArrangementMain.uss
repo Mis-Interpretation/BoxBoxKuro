@@ -248,6 +248,11 @@
     flex-grow: 1;
 }
 
+/* 避免最后一行贴在滚动视口底边被裁切 */
+#level-list .unity-scroll-view__content-container {
+    padding-bottom: 8px;
+}
+
 .level-item {
     flex-direction: row;
     align-items: center;

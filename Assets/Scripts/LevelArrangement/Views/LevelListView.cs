@@ -37,7 +37,8 @@ public class LevelListView
         _listView.reorderable = true;
         _listView.reorderMode = ListViewReorderMode.Animated;
         _listView.itemIndexChanged += HandleItemIndexChanged;
-        _listView.fixedItemHeight = 52;
+        // 行内有关卡名 + 标签行；52 不足会导致单元格裁切（最后一项在视口底缘最明显）
+        _listView.fixedItemHeight = 68;
     }
 
     public void Bind(ArrangementStateModel state)
