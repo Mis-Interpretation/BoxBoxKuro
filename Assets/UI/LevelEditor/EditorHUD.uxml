@@ -4,10 +4,11 @@
         <ui:VisualElement name="hud-root" class="hud-root">
             <ui:Label name="level-name-display" text="（未命名）" class="level-name" style="width: 10%;"/>
             <ui:VisualElement class="grid-size-group">
+                <ui:Label text="画布尺寸" class="grid-size-title"/>
                 <ui:Label text="W" class="grid-label"/>
-                <ui:IntegerField name="grid-width" value="10" class="grid-input" style="height: 32px;"/>
+                <ui:IntegerField name="grid-width" value="10" class="grid-input"/>
                 <ui:Label text="H" class="grid-label"/>
-                <ui:IntegerField name="grid-height" value="10" class="grid-input" style="height: 32px;"/>
+                <ui:IntegerField name="grid-height" value="10" class="grid-input"/>
             </ui:VisualElement>
             <ui:VisualElement class="separator"/>
             <ui:Button name="save-btn" text="保存" class="hud-btn"/>

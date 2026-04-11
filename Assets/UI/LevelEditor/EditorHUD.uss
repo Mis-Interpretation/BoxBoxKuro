@@ -87,6 +87,12 @@
     margin-right: 8px;
 }
 
+.grid-size-title {
+    font-size: 12px;
+    color: #999;
+    margin-right: 6px;
+}
+
 .grid-label {
     font-size: 12px;
     color: #999;
@@ -95,11 +101,32 @@
 
 .grid-input {
     width: 48px;
-    height: 28px;
+    min-height: 32px;
+    flex-shrink: 0;
 }
 
-.grid-input IntegerInput {
-    color: #222;
+/* 与顶栏同行时 center 会压扁输入框导致文字上下被裁切；内部给足高度并收紧 padding */
+.grid-input .unity-base-field__input,
+.grid-input .unity-text-field__input,
+.grid-input .unity-base-text-field__input {
+    background-color: #ffffff;
+    color: #222222;
+    min-height: 30px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    justify-content: flex-start;
+}
+
+.grid-input TextElement {
+    color: #222222;
+    -unity-text-align: middle-left;
+}
+
+.grid-input IntegerInput,
+.grid-input TextInput {
+    color: #222222;
 }
 
 /* ===== 分隔线 ===== */
